@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Desafio 1 JS </title>
+</head>
+<body>
+    <div class="external">
+
+        <div class="product-card">
+
+            <ul class="product-gallery">
+                <li class="item-image active" data-attribute="black">
+                    <img src="assets/img/negro.webp" alt="" class="product-featured-image">
+                </li>
+                <li class="item-image" data-attribute="white">
+                    <img src="assets/img/blanco.webp" alt="" class="product-featured-image">
+                </li>
+            </ul>
+            <h3 class="product-title">Macbook Pro M1</h3>
+            <div class="quantity-color-container">
+                <input type="number" class="select-quantity" min="1" value="1">
+                <select name="color" id="color" class="select-color">
+    
+                    <option value="black">Negro</option>
+                    <option value="white">Blanco</option>
+                </select>
+            </div>
+    
+    
+            <div class="price-container">
+                Precio: $<span class="price">1.980.000</span>
+            </div>
+    
+            <button class="calculate">Agregar al Carro</button>
+    
+        </div>
+        
+        <div class="cart">
+            <h3>Carro de compras:</h3>
+            <div class="final-price">
+                Total: <span class="final-price-amount">$0</span>
+            </div> 
+            
+            <div class="final-quantity">
+                Unidades: <span class="final-quantity-amount">0</span>
+            </div>
+    
+            <div class="final-color">
+                Color: <span class="final-selected-color"></span>
+                <div class="color-swatch" style="background-color: black"></div>
+                
+
+                </div>
+            </div>
+    
+        </div>
+
+    </div> 
+    
+    <script src="index1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #8bc20b;
+  font-family:'Roboto', sans-serif; }
+
+.external {
+  width: 700px;
+  margin: 45px auto;
+  display: flex;
+  gap: 45px; }
+
+.product-card {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  width: 380px; }
+  .product-card .product-gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .product-card .product-gallery li {
+      display: none; }
+      .product-card .product-gallery li.active {
+        display: block; }
+      .product-card .product-gallery li img {
+        transition: .3s;width: 200px;height: 250px;margin-left: 30px; }
+  .product-card .product-featured-image {
+    width: 100%;
+    height: auto; }
+  .product-card .product-title {
+    font-size: 24px; }
+  .product-card .quantity-color-container {
+    display: flex;
+    gap: 21px; }
+    .product-card .quantity-color-container .select-quantity {
+      padding: 8px;
+      width: 30%; }
+    .product-card .quantity-color-container .select-color {
+      padding: 8px;
+      width: 70%; }
+  .product-card .price-container {
+    font-size: 18px; }
+    .product-card .price-container .price {
+      font-weight: 700; }
+  .product-card .calculate {
+    margin-top: 18px;
+    padding: 16px;
+    font-weight: 700;
+    background-color: #31312e;
+    border: 0;
+    cursor: pointer;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px; }
+
+.cart {
+    margin-top: 300px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  font-size: 20px;
+  background-color: rgb(248, 245, 245);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .cart h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 25px; }
+  
+  .cart .final-color {
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+    .cart .final-color .color-swatch {
+      width: 30px;
+      height: 30px;
+      border-radius: 100px;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      outline: 2px solid #aaa; }
+
+    
